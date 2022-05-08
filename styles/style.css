@@ -8,7 +8,7 @@
     font-family: 'Work Sans', sans-serif;
     outline: none;
 }
-
+/* HEAD */
 nav {
     display: flex;
     justify-content: space-around;
@@ -93,4 +93,247 @@ a:active {
     text-indent: 3rem;
     font-weight: bold;
 
+}
+
+/* PROJECT PART */
+
+.project-container{
+    width: 100vw;
+    background-color: #fff4e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden; 
+}
+
+.projects-slider{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 90%;
+    
+}
+
+/* CAROUSEL */
+
+.project-inner{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-head{
+    text-align: center;
+    font-size:2.4rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+}
+
+.carousel-head.fade-top{
+    animation: fade-top 1s ease forwards;
+}
+
+@keyframes fade-top{
+    0%{ transform: translateY(-600px); opacity: 0;} 
+    100%{ transform: translateY(0); opacity: 1;} 
+}
+
+.carousel-image img{
+    width: 250px;
+    height: 200px;
+    border-radius: 50px;
+    cursor: url(img/sun.png), pointer;
+} 
+
+.carousel-item-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    opacity: 0;
+}
+
+.carousel-item-container.fade-bottom{
+    animation: fade-bottom 1s ease forwards;
+}
+
+@keyframes fade-bottom {
+    
+    0%{ transform: translateY(600px); opacity: 0;} 
+    100%{ transform: translateY(0); opacity: 1;} 
+}
+
+
+.carousel-control-prev, .carousel-control-next{
+    opacity: 0;
+}
+
+.carousel-control-prev.fade-left{
+    animation: fade-left 1s ease forwards;
+}
+
+@keyframes fade-left {
+    
+    0%{ transform: translateX(-600px); opacity: 0;} 
+    100%{ transform: translateX(0); opacity: 1;} 
+}
+
+.carousel-control-next.fade-right{
+    animation: fade-right 1s ease forwards;
+}
+
+@keyframes fade-right {
+    
+    0%{ transform: translateX(600px); opacity: 0;} 
+    100%{ transform: translateX(0); opacity: 1;} 
+}
+
+
+/* POPUP IMAGES */
+
+.popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    color: #fff4e6;
+    cursor: pointer;
+}
+
+.popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 350px;
+    height: auto;
+    border-radius: 0;
+}
+
+/* CIRCLE CONTAINER */
+
+.circle-container{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle-head{
+    text-align: center;
+    font-size:2.4rem;
+}
+
+.orbit{
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+
+}
+
+.orbit-line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    border: 2px #fff4e6 dashed;
+    border-radius: 100%;
+    animation: spin-right 15s linear infinite;
+}
+
+#js-icon{
+    position: absolute; 
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#html-icon{
+    position: absolute; 
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+#css-icon{ 
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+#react-icon{ 
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin-right {
+    100% {
+      transform: translate(-50%,-50%) rotate(360deg);
+    }
+  }
+
+/* MEDIA */
+
+ @media (min-width:630px){
+    .carousel-image img{
+        width: 450px;
+        height: auto;
+    } 
+
+    .popup-image img{
+        width: 550px;
+        height: auto;
+    }
+
+    .orbit-line{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (min-width:1000px){
+    .carousel-image img{
+        width: 600px;
+        height: auto;
+    } 
+    .popup-image img{
+        max-width: 1600px;
+        height: auto;
+    }
+
+    .orbit-line{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+@media (min-width:1200px){
+    .projects-slider{
+        display: grid;
+        grid-template-columns: 55% 40% ;
+        grid-template-rows: auto;
+        width: 90%;
+        gap: 5%;
+    }
+
+    .carousel-image img{
+        width: 450px;
+        height: auto;
+    } 
 }
