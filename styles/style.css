@@ -57,8 +57,8 @@ a:active {
     background-color: #fff4e6; 
     padding: 15px; 
     border-radius: 30px;
-    box-shadow: -5px -5px 15px rgba(255,255,255,.5),
-                    5px 5px 15px rgba(0,0,0,.5);
+    /* box-shadow: -5px -5px 15px rgba(255,255,255,.5),
+                    5px 5px 15px rgba(0,0,0,.5); */
 
     display: flex;
     justify-content: space-evenly;
