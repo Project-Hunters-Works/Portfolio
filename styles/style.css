@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -432,7 +433,7 @@ a:active {
     /* background: url(./pexels-jiarong-deng-1034662.jpg); */
     background-size: cover;
     background-color: #fff4e6;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 .personal-icon {
@@ -626,7 +627,7 @@ a:active {
 #message {
     font-size: 18px;
     color: #000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     line-height: 1;
     padding: 20px 25px;
     text-align: center;
@@ -702,7 +703,7 @@ a:active {
     width: 40%;
     margin-top: 10px;
     padding: 40px;
-    font-family: 'Oleo Script Swash Caps', cursive;
+    /* font-family: 'Oleo Script Swash Caps', cursive; */
     font-size: 32px;
     
     
