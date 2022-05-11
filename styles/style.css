@@ -22,6 +22,7 @@ nav {
     background-color: #fff4e6;
     width: 90%;
     margin: 0 auto;
+    padding: 0;
 }
 
 ul {
@@ -30,7 +31,7 @@ ul {
     list-style-type: none;
     background-color: inherit;
     padding-left: 0;
-    margin-top: 20px;
+    margin: 0;
 }
 
 a {
@@ -95,13 +96,13 @@ a:active {
 .introcontent>h1 {
     margin: 1.5rem;
     text-align: center;
+    font-weight: bold;
 
 }
 
 .introcontent>p {
     line-height: 2rem;
-    text-indent: 3rem;
-    text-align: justify;
+    text-align: center;
     font-size: 1.5rem;
 
 }
@@ -169,14 +170,22 @@ a:active {
         
     } 
     .introcontent>h1 {
-        margin: 0rem;
+    
+        margin: .5rem;
     
     }
     .introcontent>p {
-        line-height: 1.5rem;
+        line-height: 2rem;
 
     }
+    .introcontent {
+        width: auto;
+        margin: 0px 10px;
+        padding: 0px;
+    }
 }
+
+/* PROJECT PART */
 
 .project-container{
     min-height: 100vh;
