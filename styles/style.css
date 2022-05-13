@@ -4,12 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    
 }
 
 body {
     background-color: #fff4e6;
-    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 /* HEAD */
 nav {
@@ -621,24 +621,11 @@ a:active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background: url(./pexels-jiarong-deng-1034662.jpg); */
-    background-size: cover;
     background-color: #fff4e6;
-    /* font-family: 'Poppins', sans-serif; */
 }
 
-.personal-icon {
-    display: flex;
-    justify-content: space-around;
-}
-
-.personal-icon div img {
-    width: 70px;
-    height: 70px;
-}
 
 .contact .content {
-    max-width: 800px;
     text-align: center;
     position: relative;
 }
@@ -647,33 +634,29 @@ a:active {
     font-size: 36px;
     font-weight: 500;
     color: #000;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     
 }
 
 .contact .content h3 {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-.contact .content p {
-   
-    font-weight: 300;
-    color: #000;
-    /* margin-bottom: 70px; */
-}
 
 .container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 6rem;
+    border-top: 3px solid black;
 }
 
 .container .contactInfo {
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .container .contactInfo .box {
@@ -707,33 +690,14 @@ a:active {
     font-weight: 500;
     color: #00bcd4;
 }
-.mid {
-    transform: translateX(-120px);
-    opacity: 0.5;
 
-}
-
-.line1 {
-    border-bottom: 10px black;
-    border-style: double;
-    height: 250px;
-    display: inline-block;
-    transform: rotateZ(45deg);
-}
-
-.line2 {
-    border-bottom: 10px black;
-    border-style: double;
-    height: 250px;
-    display: inline-block;
-    transform: rotateZ(135deg);
-}
 
 .contactForm {
     width: 40%;
     padding: 40px;
     background-color: #fff4e6;
-    background-image: linear-gradient(to right, #fff4e6, #fff);
+    margin-left: 10%;
+    border-radius: 5%;
     
 }
 
@@ -747,9 +711,9 @@ a:active {
     position: relative;
     width: 100%;
     margin-top: 10px;
-    background-color: inherit;
 
 }
+
 
 .contactForm .inputBox input, 
 .contactForm .inputBox textarea {
@@ -761,6 +725,7 @@ a:active {
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
+    background-color: #fff4e6;
 }
 .contactForm .inputBox span {
     position: absolute;
@@ -784,8 +749,6 @@ a:active {
 
 .contactForm .inputBox input[type="submit"] {
     width: 100px;
-    background: #00bcd4;
-    color: #fff;
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -805,8 +768,11 @@ a:active {
     .container .contactInfo, .contactForm {
         width: 100%;
     }
-    .mid {
-        transform: translateX(0px);
+    .zigzag {
+      display: none;
+    }
+    .zigzag2 {
+      display: none;
     }
 }
 
@@ -818,14 +784,20 @@ a:active {
 #message {
     font-size: 18px;
     color: #000;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1;
     padding: 20px 25px;
     text-align: center;
     border-radius: 60px;
-    background-color: #efcda1;
+    background-color: rgba(241, 148, 187,0.5);
     transition: 0.3s ease background-color, 0.3s ease box-shadow;
+    cursor: pointer;
 }
+#message:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    }
+
 
 #send_btn {
     position: absolute;
@@ -833,11 +805,16 @@ a:active {
     right: 0;
     font-size: 20px;
     line-height: 1;
-    color: rgb(201, 174, 174);
+    color: rgb(171, 42, 42);
     padding: 19px 12px;
     cursor: pointer;
     transition: 0.3s ease transform;
 }
+#send_btn:active {
+    /* background-color: #fff4e6; */
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    }
 
 #message.sending {
     background-color: #e05051;
@@ -865,7 +842,7 @@ a:active {
 }
 
 #message.sent {
-    background-color: #bb3800;
+    background-color: rgba(241, 148, 187,0.8);
     box-shadow: 0 20px 30px -6px #9fffca;
 }
 
@@ -893,9 +870,10 @@ a:active {
     display: none;
     width: 40%;
     margin-top: 10px;
-    padding: 40px;
-    /* font-family: 'Oleo Script Swash Caps', cursive; */
+    paddivng: 40px;
+    font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 32px;
+    margin-left: 10%;
     
     
 }
@@ -925,7 +903,6 @@ a:active {
   .icon i {
 	position: relative;
 	font-size: 30px;
-	
 	transition: all 0.25s ease;
   }
   
@@ -957,5 +934,79 @@ a:active {
 	
   }
   .icon-expan:hover::before {
-    box-shadow: inset 0 0 0 60px #8a89a5;
+    box-shadow: inset 0 0 0 60px #fb1d78;
+    opacity: 0.8;
+  }
+
+
+  /* *****************Zigzag************************* */
+
+  .zigzag {
+    position: absolute;
+    width: 30px;
+    z-index: 1;
+    height: 40vh;
+    left: 40%;
+    opacity: 0.3;
+  }
+  .zigzag:before,
+  .zigzag:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .zigzag:before {
+    width: 46px;
+    left: 80%;
+    background: linear-gradient(45deg, #fb1d78 25px, transparent 0) 0 25px, linear-gradient(135deg, #fb1d78 25px, transparent 0) 0 25px;
+    background-position: top left;
+    background-repeat: repeat-y;
+    background-size: 50px 50px;
+    height: 40vh;
+  }
+  .zigzag:after {
+    width: 50px;
+    left: 60%;
+    background: linear-gradient(45deg, #fff4e6 25px, transparent 0) 0 25px, linear-gradient(135deg, #fff4e6 25px, transparent 0) 0 25px;
+    background-position: top left;
+    background-repeat: repeat-y;
+    background-size: 50px 50px;
+    height: 40vh;
+  }
+
+  .zigzag2 {
+    position: absolute;
+    width: 30px;
+    z-index: 1;
+    height: 40vh;
+    left: 43%;
+    opacity: 0.3;
+  }
+  .zigzag2:before,
+  .zigzag2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .zigzag2:before {
+    width: 46px;
+    left: 83%;
+    background: linear-gradient(45deg, #fb1d78 25px, transparent 0) 0 25px, linear-gradient(135deg, #fb1d78 25px, transparent 0) 0 25px;
+    background-position: top left;
+    background-repeat: repeat-y;
+    background-size: 50px 50px;
+    height: 40vh;
+  }
+  .zigzag2:after {
+    width: 50px;
+    left: 63%;
+    background: linear-gradient(45deg, #fff4e6 25px, transparent 0) 0 25px, linear-gradient(135deg, #fff4e6 25px, transparent 0) 0 25px;
+    background-position: top left;
+    background-repeat: repeat-y;
+    background-size: 50px 50px;
+    height: 40vh;
   }
