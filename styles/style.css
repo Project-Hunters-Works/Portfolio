@@ -34,7 +34,7 @@ ul {
     margin: 0;
 }
 
-a {
+ul a {
     color: rgb(128, 51, 230, .8);
     display: block;
     text-decoration: none;
@@ -47,14 +47,14 @@ a {
                     5px 5px 12px rgba(0,0,0,.16); 
 }
 
-a:hover {
+ul a:hover {
     background-color: rgba(0,0,0,.05);
     color: rgb(128, 51, 230, 1);
     transition: .7s;
     font-weight: bolder;
 }
 
-a:active {
+ul a:active {
     box-shadow: 5px 5px 12px #ffff,
                     -5px -5px 12px rgba(0,0,0,.16); 
 }
@@ -189,14 +189,12 @@ a:active {
 
 .project-container{
     min-height: 100vh;
-    width: 100vw;
     background-color: #fff4e6;
     display: grid;
     place-items: center;
     grid-template-rows: 1fr auto; /* 09/05/20:30 */
     gap: 50px;     /* 09/05/20:30 */
     overflow-x:hidden; 
-    
 }
 
 .projects-slider{
@@ -246,13 +244,31 @@ a:active {
     opacity: 0;
 }
 
+.project-link{
+    color: rgb(128, 51, 230, .8);
+    display: block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 0;
+    border-radius: 50px;
+    background-color: #ecf0f3;
+}
+
+.project-link:hover {
+    background-color: rgba(0,0,0,.05);
+    color: orangered;
+    /* color: rgb(128, 51, 230, 1); */
+    transition: .7s;
+    font-weight: bolder;
+}
+
 .carousel-item-container.fade-bottom{
     animation: fade-bottom 1s ease forwards;
 }
 
 @keyframes fade-bottom {
     
-    0%{ transform: translateY(600px); opacity: 0;} 
+    0%{ transform: translateY(300px); opacity: 0;} 
     100%{ transform: translateY(0); opacity: 1;} 
 }
 
@@ -413,6 +429,8 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    transition: all 3s ease;
 }
 
 .future-img-container{
@@ -439,10 +457,19 @@ a:active {
     font-size: 2.5rem;
 }
 
+.future-text-container a {
+    text-decoration: none;
+    color: black;
+}
 
-.future-text-container h3{
+.future-text-container a:hover h3{
+    transform: scale(1.2);
+}
+
+.future-text-container a h3{
     margin-bottom: 50px;
     border-bottom: 2px solid orangered;
+    transition: 1s ease all;
 }
 
 
@@ -552,12 +579,30 @@ a:active {
 
 
 @media (min-width:1200px){
+
     .projects-slider{
         display: grid;
         grid-template-columns: 55% 40% ;
-        grid-template-rows: 70vh;
+        grid-template-rows: minmax(80vh, auto);
         width: 90%;
         gap: 5%;
+    }
+
+    #project-carousel{
+        height: 100%;
+    }
+
+    .project-inner{
+        height: 100%;
+    }
+
+    .carousel-head{
+        padding-top: 10px;
+        margin-bottom: 10%;
+    }
+    
+    .project-carousel-item{
+        padding-top: 60px;
     }
 
     .carousel-image img{
@@ -609,6 +654,22 @@ a:active {
         padding-bottom: 1rem;
     }
 
+}
+
+@media (min-width:1530px){
+    .carousel-image img{
+        width: 600px;
+        height: auto;
+    }
+
+    .carousel-head{
+        padding-top: 10px;
+        /* margin-bottom: 0; */
+    }
+
+    .project-carousel-item{
+        padding-top: 0;
+    }
 }
 
 /* Contact */
