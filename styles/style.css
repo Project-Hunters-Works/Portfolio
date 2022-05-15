@@ -35,7 +35,7 @@ ul {
 }
 
 
-a {
+a:not(.project-link,.future-text-container a) {
     color: rgba(0, 0, 0, 0.8);
     display: block;
     text-decoration: none;
@@ -60,6 +60,12 @@ ul a:active {
                     -5px -5px 12px rgba(0,0,0,.16); 
 }
 
+
+#introduction-slides{
+    width: 80%;
+    margin: 0 auto;
+}
+
 .homepart {
     margin: 50px auto;
     background-color: #fff4e6; 
@@ -70,7 +76,7 @@ ul a:active {
 
     display: flex;
     justify-content: space-evenly;
-    max-width: 80%;
+    max-width: 97%;
     height: 60vh;
 }
 
@@ -189,7 +195,7 @@ ul a:active {
 /* PROJECT PART */
 
 .project-container{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #fff4e6;
     display: grid;
     place-items: center;
@@ -334,7 +340,7 @@ ul a:active {
 /* CIRCLE CONTAINER */
 
 .circle-container{
-    min-height: 80vh;
+    min-height: 80%;
     display: grid;
     place-items: center;
     grid-template-rows: 20% 70% 10%;
@@ -487,6 +493,9 @@ ul a:active {
         height: auto;
     }
 
+    .circle-container{
+        min-height: 100%;    /* min-height : 100% */
+    }
     .orbit-line{
         width: 200px;
         height: 200px;
@@ -612,7 +621,7 @@ ul a:active {
     } 
 
     .circle-container{
-        min-height: 100%;
+        min-height: 100%;    /* min-height : 100% */
         display: grid;
         place-items: center;
         grid-template-rows: 11% 79% 4%;
