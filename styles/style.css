@@ -650,6 +650,9 @@ a:active {
     align-items: center;
     margin-top: 6rem;
     border-top: 3px solid black;
+    background-color: #fbeede;
+   
+    
 }
 
 .container .contactInfo {
@@ -664,6 +667,7 @@ a:active {
     padding: 20px 0;
     display: flex;
     margin-left: 5%;
+    
 }
 
 .container .contactInfo .box .icon {
@@ -694,10 +698,12 @@ a:active {
 
 .contactForm {
     width: 40%;
-    padding: 40px;
-    background-color: #fff4e6;
+    padding: 20px;
+    background-color: #fbeede;
     margin-left: 10%;
     border-radius: 5%;
+    transform: translateY(-5px);
+    
     
 }
 
@@ -720,12 +726,12 @@ a:active {
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
-    margin: 10px 0;
+    margin-top: 10px;
     border: none;
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
-    background-color: #fff4e6;
+    background-color: #fbeede;
 }
 .contactForm .inputBox span {
     position: absolute;
@@ -735,7 +741,7 @@ a:active {
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    background-color: #fff4e6;
+    background-color: #fbeede;
 }
 
 .contactForm .inputBox input:focus ~span,
@@ -747,13 +753,6 @@ a:active {
     transform: translateY(-20px);
 }
 
-.contactForm .inputBox input[type="submit"] {
-    width: 100px;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-}
 
 @media (max-width : 1200px) {
     .contact {
@@ -778,20 +777,19 @@ a:active {
 
 #app {
     position: relative;
-    width: 180px;
+    width: 130px;
 }
 
 #message {
-    font-size: 18px;
     color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1;
-    padding: 20px 25px;
-    text-align: center;
+    text-align: left;
     border-radius: 60px;
     background-color: rgba(241, 148, 187,0.5);
     transition: 0.3s ease background-color, 0.3s ease box-shadow;
     cursor: pointer;
+    padding: 15px 10px 15px 30px;
+    
 }
 #message:active {
     box-shadow: 0 5px #666;
@@ -801,20 +799,14 @@ a:active {
 
 #send_btn {
     position: absolute;
+    padding: 15px 10px;
     top: 0;
     right: 0;
     font-size: 20px;
-    line-height: 1;
     color: rgb(171, 42, 42);
-    padding: 19px 12px;
     cursor: pointer;
     transition: 0.3s ease transform;
 }
-#send_btn:active {
-    /* background-color: #fff4e6; */
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-    }
 
 #message.sending {
     background-color: #e05051;
@@ -870,12 +862,14 @@ a:active {
     display: none;
     width: 40%;
     margin-top: 10px;
-    paddivng: 40px;
+    
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 32px;
     margin-left: 10%;
     
-    
+}
+.popup p {
+    text-align: right;
 }
 
 .icon {
@@ -948,6 +942,7 @@ a:active {
     height: 40vh;
     left: 40%;
     opacity: 0.3;
+   
   }
   .zigzag:before,
   .zigzag:after {
@@ -956,6 +951,7 @@ a:active {
     position: absolute;
     left: 0;
     right: 0;
+    
   }
   .zigzag:before {
     width: 46px;
@@ -964,7 +960,8 @@ a:active {
     background-position: top left;
     background-repeat: repeat-y;
     background-size: 50px 50px;
-    height: 40vh;
+    height: 38.7vh;
+    
   }
   .zigzag:after {
     width: 50px;
@@ -973,7 +970,7 @@ a:active {
     background-position: top left;
     background-repeat: repeat-y;
     background-size: 50px 50px;
-    height: 40vh;
+    height: 38.7vh;
   }
 
   .zigzag2 {
@@ -999,7 +996,7 @@ a:active {
     background-position: top left;
     background-repeat: repeat-y;
     background-size: 50px 50px;
-    height: 40vh;
+    height: 38.7vh;
   }
   .zigzag2:after {
     width: 50px;
@@ -1008,5 +1005,21 @@ a:active {
     background-position: top left;
     background-repeat: repeat-y;
     background-size: 50px 50px;
-    height: 40vh;
+    height: 38.7vh;
   }
+
+  .footer {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .quick {
+      flex-direction: column;
+      
+  }
+
+  .footer div {
+    width: 33%;
+  }
+
+
