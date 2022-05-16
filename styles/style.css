@@ -25,6 +25,8 @@ nav {
     padding: 0;
 }
 
+.carousel .carousel-indicators button {background-color: orangered;}
+
 ul {
     display: flex;
     align-items: center;
@@ -64,6 +66,7 @@ ul a:active {
 #introduction-slides{
     width: 80%;
     margin: 0 auto;
+    min-height: 500px;
 }
 
 .homepart {
@@ -77,7 +80,7 @@ ul a:active {
     display: flex;
     justify-content: space-evenly;
     max-width: 97%;
-    height: 60vh;
+    min-height: 500px;
 }
 
 .introcontent {
