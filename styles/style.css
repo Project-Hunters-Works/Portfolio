@@ -934,7 +934,7 @@ a:active {
 
 
   /* *****************Zigzag************************* */
-
+/* 
   .zigzag {
     position: absolute;
     width: 30px;
@@ -1006,7 +1006,7 @@ a:active {
     background-repeat: repeat-y;
     background-size: 50px 50px;
     height: 38.7vh;
-  }
+  } */
 
   .footer {
       display: flex;
