@@ -12,7 +12,7 @@
 ✔️ Project Currently Working On\
 ✔️ Future Projects\
 ✔️ Contact Us📋\
-✔️ Footer\
+✔️ Footer
  
  
  # Contributing 💡
