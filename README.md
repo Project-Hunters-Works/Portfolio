@@ -6,6 +6,14 @@
 [Click For Preview](https://project-hunters-works.github.io/Portfolio/)
  </div>
  
+ # Sections 📚
+
+✔️ Introduction Contents\
+✔️ Projects We Made \
+✔️ Project Currently Working On\
+✔️ Future Projects\
+✔️ Contact Us📋\
+✔️ Footer\
  
  
  # Contributing 💡
