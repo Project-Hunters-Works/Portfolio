@@ -6,6 +6,12 @@
 [Click For Preview](https://project-hunters-works.github.io/Portfolio/)
  </div>
  
+ 
+ 
+ # Contributing 💡
+
+If you can help us with these. Please don't hesitate to open an [pull request](https://github.com/Project-Hunters-Works/Portfolio/pulls) or [issue](https://github.com/Project-Hunters-Works/Portfolio/issues).
+ 
  # Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
