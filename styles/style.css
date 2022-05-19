@@ -35,7 +35,7 @@ ul {
 }
 
 
-a:not(.project-link,.future-text-container a) {
+a:not(.project-link,.future-text-container a, .quick a) {
     color: rgba(0, 0, 0, 0.8);
     display: block;
     text-decoration: none;
@@ -48,7 +48,7 @@ a:not(.project-link,.future-text-container a) {
                     5px 5px 12px #FEA74E; 
 }
 
-ul a:hover {
+ul a:hover:not(.quick a) {
     background-color: rgba(0,0,0,.05);
     color: rgb(128, 51, 230, 1);
     transition: .7s;
@@ -686,10 +686,10 @@ ul a:active {
 
 .contact {
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
     padding: 10px 100px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     background-color: #fff4e6;
@@ -720,8 +720,9 @@ ul a:active {
     justify-content: center;
     align-items: center;
     margin-top: 6rem;
-    border-top: 3px solid black;
+    border-top: 3px solid orangered;
     background-color: #fbeede;
+    border-radius: 10px;
    
     
 }
@@ -838,12 +839,13 @@ ul a:active {
     .container .contactInfo, .contactForm {
         width: 100%;
     }
-    .zigzag {
+
+    /* .zigzag {
       display: none;
     }
     .zigzag2 {
       display: none;
-    }
+    } */
 }
 
 #app {
@@ -1079,16 +1081,29 @@ ul a:active {
     height: 38.7vh;
   } */
 
-  .footer {
-      display: flex;
-      justify-content: space-around;
-  }
 
-  .quick {
-      flex-direction: column;
-      
-  }
 
-  .footer div {
-    width: 33%;
+.footer {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fae9d4;
+
   }
+.quick ul li{
+    padding: 0px 50px;
+}
+
+.footer .phlogo img {
+    width: 130px;
+    height: 80px;
+}
+.copyright {
+    margin: 0;
+}
+.quick a {
+    text-decoration: none;
+    color: #333;
+
+}
