@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Hunters Portfolio</title>
+    <script src="https://kit.fontawesome.com/d6d7ecfc42.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -24,8 +25,12 @@
     <!-- <logo class="banner-wrapper">
         <img src="./images/banner.png" alt="" style="width: 100%; height: 20vh">
     </logo> -->
-    <div style="display: flex;">
-        <img src="./images/project_hunters_logo.png" alt="logo" style="display: inline;width: 15rem;margin-left: 5em;margin-top: 1em;margin-bottom: 1em;">
+    <div class="banner">
+        <div class="banner-top">
+            <img class="banner-logo" src="./images/project_hunters_logo.png" alt="logo" >
+            <i class="fa-solid  fa-bars hamburger"></i> 
+        </div>
+       
         <nav>
             <ul class="menuItems">
               <li><a href='index.html' data-item='Home'>Home</a></li>
@@ -190,7 +195,7 @@
         </div>
       </div>
     <!-- Contact -->
-    <div class="void">
+    <div id="contactpart" class="void">
         <section class="contact">
           <div class="container">
             <div class="contactInfo">
@@ -223,8 +228,8 @@
               </div>
             </div>
             <div></div>
-            <!-- <div class="zigzag"></div>
-            <div class="zigzag2"></div> -->
+             <div class="zigzag"></div>
+            <div class="zigzag2"></div> 
             <div class="contactForm">
               <form action="#">
                 <h2>Send Message</h2>
@@ -274,10 +279,6 @@
        
       </footer>
   
-      <script
-        src="https://kit.fontawesome.com/d6d7ecfc42.js"
-        crossorigin="anonymous"
-      ></script>
       <script>
         $(function () {
           $("#send_btn").on("click", function () {

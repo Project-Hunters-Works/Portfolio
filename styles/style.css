@@ -12,6 +12,30 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 /* HEAD */
+
+.banner{
+    display: flex;
+    align-items: center;
+}
+
+.banner-logo{
+    display: inline;
+    width: 15rem;
+    margin-left: 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.banner-top{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hamburger{
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -48,11 +72,13 @@ a:not(.project-link,.future-text-container a, .quick a) {
     background-color: #ecf0f3;
     box-shadow: -5px -5px 12px #ffff,
                     5px 5px 12px #FEA74E; 
+    
 }
+
 
 ul a:hover:not(.quick a) {
     background-color: rgba(0,0,0,.05);
-    color: rgb(128, 51, 230, 1);
+    color: rgb(128, 51, 230);
     transition: .7s;
     font-weight: bolder;
 }
@@ -79,7 +105,7 @@ ul a:active {
 
     display: flex;
     justify-content: space-evenly;
-    max-width: 97%;
+    max-width: 90%;
     min-height: 500px;
 }
 
@@ -154,6 +180,51 @@ ul a:active {
     .imgcontent img {
         width: 400px;
         height: auto;
+    }
+
+    a:not(.project-link,.future-text-container a, .quick a){
+        width: 15rem;
+        text-align: center;
+    }
+    nav{
+        display: none;
+        justify-content: center;
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    .menuItems{
+        margin-top: 0;
+    }
+
+    .banner{
+        flex-direction: column;
+        justify-content: space-between;
+        padding:0 1rem ;
+    }
+
+    .banner-top{
+        justify-content: space-between;
+    }
+
+    .banner-logo{
+        margin-left: 0;
+        width: 12rem;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        font-size: 3rem;
+        opacity: .9;
     }
 }
 
@@ -255,21 +326,20 @@ ul a:active {
 }
 
 .project-link{
-    color: rgb(128, 51, 230, .8);
+    color: black;
     display: block;
     text-decoration: none;
     letter-spacing: 1px;
     margin: 0;
     border-radius: 50px;
     background-color: #ecf0f3;
+    transition: color .7s;
 }
+
 
 .project-link:hover {
     background-color: rgba(0,0,0,.05);
-    color: orangered;
-    /* color: rgb(128, 51, 230, 1); */
-    transition: .7s;
-    font-weight: bolder;
+    color:  rgb(128, 51, 230);
 }
 
 .carousel-item-container.fade-bottom{
@@ -337,7 +407,6 @@ ul a:active {
     transform: translate(-50% ,-50%);
     width: 350px;
     height: auto;
-    border-radius: 0;
 }
 
 /* CIRCLE CONTAINER */
