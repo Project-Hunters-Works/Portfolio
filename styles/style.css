@@ -907,8 +907,8 @@ ul a:active {
 }
 
 #message.sent {
-    background-color: rgba(241, 148, 187,0.8);
-    box-shadow: 0 20px 30px -6px #9fffca;
+    /* background-color: rgba(241, 148, 187,0.8); */
+    /* box-shadow: 0 20px 30px -6px #9fffca; */
 }
 
 #send_btn.sent {
@@ -923,7 +923,7 @@ ul a:active {
         transform: scale(1) rotateZ(-90deg);
     }
     100% {
-        color: #00bb54;
+        /* color: #00bb54; */
         margin-top: -100px;
         transform: scale(0) rotateZ(-90deg);
         
