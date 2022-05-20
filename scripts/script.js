@@ -1,3 +1,14 @@
+
+/* HAMBURGER */
+
+let hamburger = document.querySelector('.hamburger');
+let navList = document.querySelector('nav');
+
+hamburger.addEventListener('click', () => {
+    navList.classList.toggle('active')
+})
+
+
 /* POPUP-IMAGES */
 
 document.querySelectorAll('.carousel-image img').forEach(item =>{
