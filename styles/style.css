@@ -789,7 +789,7 @@ ul a:active {
 .container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 6rem;
     border-top: 3px solid orangered;
@@ -800,7 +800,7 @@ ul a:active {
 }
 
 .container .contactInfo {
-    width: 30%;
+    /* width: 30%; */
     display: flex;
     flex-direction: column;
     
@@ -898,27 +898,7 @@ ul a:active {
 }
 
 
-@media (max-width : 1200px) {
-    .contact {
-        padding: 50px;
-    }
-    .container {
-        flex-direction: column;
-    }
-    .container .contactInfo {
-        margin-bottom: 40px;
-    }
-    .container .contactInfo, .contactForm {
-        width: 100%;
-    }
 
-    /* .zigzag {
-      display: none;
-    }
-    .zigzag2 {
-      display: none;
-    } */
-}
 
 #app {
     position: relative;
@@ -978,11 +958,6 @@ ul a:active {
     }
 }
 
-#message.sent {
-    background-color: rgba(241, 148, 187,0.8);
-    box-shadow: 0 20px 30px -6px #9fffca;
-}
-
 #send_btn.sent {
     transform: rotateZ(-90deg);
     animation: moveUp 1s ease 0s forwards;
@@ -995,7 +970,6 @@ ul a:active {
         transform: scale(1) rotateZ(-90deg);
     }
     100% {
-        color: #00bb54;
         margin-top: -100px;
         transform: scale(0) rotateZ(-90deg);
         
@@ -1005,16 +979,15 @@ ul a:active {
 
 .popup {
     display: none;
-    width: 40%;
     margin-top: 10px;
-    
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 32px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    
     
 }
 .popup p {
-    text-align: right;
+    text-align: center;
 }
 
 .icon {
@@ -1077,86 +1050,8 @@ ul a:active {
     opacity: 0.8;
   }
 
-
-  /* *****************Zigzag************************* */
-/* 
-  .zigzag {
-    position: absolute;
-    width: 30px;
-    z-index: 1;
-    height: 40vh;
-    left: 40%;
-    opacity: 0.3;
-   
-  }
-  .zigzag:before,
-  .zigzag:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    
-  }
-  .zigzag:before {
-    width: 46px;
-    left: 80%;
-    background: linear-gradient(45deg, #fb1d78 25px, transparent 0) 0 25px, linear-gradient(135deg, #fb1d78 25px, transparent 0) 0 25px;
-    background-position: top left;
-    background-repeat: repeat-y;
-    background-size: 50px 50px;
-    height: 38.7vh;
-    
-  }
-  .zigzag:after {
-    width: 50px;
-    left: 60%;
-    background: linear-gradient(45deg, #fff4e6 25px, transparent 0) 0 25px, linear-gradient(135deg, #fff4e6 25px, transparent 0) 0 25px;
-    background-position: top left;
-    background-repeat: repeat-y;
-    background-size: 50px 50px;
-    height: 38.7vh;
-  }
-
-  .zigzag2 {
-    position: absolute;
-    width: 30px;
-    z-index: 1;
-    height: 40vh;
-    left: 43%;
-    opacity: 0.3;
-  }
-  .zigzag2:before,
-  .zigzag2:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-  .zigzag2:before {
-    width: 46px;
-    left: 83%;
-    background: linear-gradient(45deg, #fb1d78 25px, transparent 0) 0 25px, linear-gradient(135deg, #fb1d78 25px, transparent 0) 0 25px;
-    background-position: top left;
-    background-repeat: repeat-y;
-    background-size: 50px 50px;
-    height: 38.7vh;
-  }
-  .zigzag2:after {
-    width: 50px;
-    left: 63%;
-    background: linear-gradient(45deg, #fff4e6 25px, transparent 0) 0 25px, linear-gradient(135deg, #fff4e6 25px, transparent 0) 0 25px;
-    background-position: top left;
-    background-repeat: repeat-y;
-    background-size: 50px 50px;
-    height: 38.7vh;
-  } */
-
-
-
 .footer {
-    height: 15vh;
+    /* height: 15vh; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1179,3 +1074,39 @@ ul a:active {
     color: #333;
 
 }
+
+@media (max-width : 1200px) {
+    .contact {
+        padding: 20px;
+    }
+    .container {
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .container .contactInfo {
+        margin-bottom: 40px;
+        width: 80%;
+        margin-left: -15%;
+    }
+    .contactForm {
+        padding: 0px;
+        margin: 0;
+        width: 80%;
+    }
+    
+    .container .contactInfo .box .text {
+        margin-left: -5px;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .popup {
+       margin-left: 10%;
+       width: 100%;
+    }
+        
+}
+    
+    
