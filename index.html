@@ -22,12 +22,9 @@
 <body>
 
     <!-- HEAD PART -->
-    <!-- <logo class="banner-wrapper">
-        <img src="./images/banner.png" alt="" style="width: 100%; height: 20vh">
-    </logo> -->
     <div class="banner">
         <div class="banner-top">
-            <img class="banner-logo" src="./images/project_hunters_logo.png" alt="logo" >
+            <img class="banner-logo" src="./images/project_hunters_logo.png" alt="logo" title="project-hunters">
             <i class="fa-solid  fa-bars hamburger"></i> 
         </div>
        
@@ -114,7 +111,7 @@
               
                       <div class="carousel-item-container">
                           <div class="carousel-image">
-                              <img src="images/project.png" alt="project">
+                              <img src="images/project.png" alt="project" title="Project">
                           </div>
                           <h1><a class="project-link" href="#">Project - 2</a> </h1>
                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis porro provident esse eius
@@ -126,7 +123,7 @@
                   <div class="carousel-item project-carousel-item  ">
                       <div class="carousel-item-container">
                           <div class="carousel-image">
-                              <img src="images/project.png" alt="project">
+                              <img src="images/project.png" alt="project" title="Project">
                           </div>
                           <h1><a class="project-link" href="#">Project - 3</a></h1>
                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis porro provident esse eius
@@ -150,7 +147,7 @@
     
             <div class="popup-image">
                 <span> &times; </span>
-                <img src="images/project.png" alt="popup">
+                <img src="images/project.png" alt="popup" title="Project">
             </div>
             <div class="circle-container">
                 <div class="circle-head">
@@ -159,16 +156,16 @@
                 <div class="orbit">
                   <div class="orbit-line">
                     <div id="js-icon" class="orbit-item">
-                        <img src="images/js_icon.png" width="100px" height="auto" alt="javascript">
+                        <img src="images/js_icon.png" width="80px" height="auto" alt="javascript" title="Javascript">
                     </div>
                     <div id="html-icon" class="orbit-item">
-                        <img src="images/html_icon.png" width="95px" height="auto" alt="html">
+                        <img src="images/html_icon.png" width="75px" height="auto" alt="html" title="html">
                     </div>
                     <div id="css-icon" class="orbit-item">
-                        <img src="images/css_icon.png" width="95px" height="auto" alt="css">
+                        <img src="images/css_icon.png" width="75px" height="auto" alt="css" title="css">
                     </div>
                     <div id="react-icon" class="orbit-item">
-                        <img src="images/react_icon.png" width="95px" height="auto" alt="react">
+                        <img src="images/react_icon.png" width="75px" height="auto" alt="react" title="react">
                     </div>
             
                 </div>
@@ -259,13 +256,13 @@
       <footer class="foot">
         <div class="footer">
           <div class="phlogo">
-            <img src="./images/project_hunters_logo.png" alt="logo" />
+            <img src="./images/project_hunters_logo.png" alt="logo" title="Project-Hunters"/>
           </div>
           <div class="quick">
               <ul>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">About</a></li>
-                  <li><a href="">Projects</a></li>
+                  <li><a href='index.html'>Home</a></li>
+                  <li><a href='index.html'>About</a></li>
+                  <li><a href='#project-carousel'>Projects</a></li>
               </ul>
               <ul>
                
@@ -275,55 +272,6 @@
         </div>
        
       </footer>
-  
-      <script>
-        
-        $(function () {
-          $("#send_btn").on("click", function () {
-            if ($("#name").val() != "" && $("#email").val() != "" && $("#typemsg").val() != ""){
-
-              setTimeout(function () {
-              $("#message").addClass("sending").text("Sending");
-              $("#send_btn").addClass("sending");
-            }, 0);
-  
-            setTimeout(function () {
-              $("#message").addClass("sent").text("Sent");
-              $("#send_btn").addClass("sent");
-            }, 2600);
-            setTimeout(function () {
-              $(".contactForm").css("display", "none");
-              $(".popup").css("display", "block");
-            }, 4000);
-            }
-            else{
-              alert("Please fill all the blanks.")
-            }
-          });
-        });
-        $(function () {
-          $("#message").on("click", function () {
-            if ($("#name").val() != "" && $("#email").val() != "" && $("#typemsg").val() != ""){
-              setTimeout(function () {
-              $("#message").addClass("sending").text("Sending");
-              $("#send_btn").addClass("sending");
-            }, 0);
-  
-            setTimeout(function () {
-              $("#message").addClass("sent").text("Sent");
-              $("#send_btn").addClass("sent");
-            }, 2600);
-            setTimeout(function () {
-              $(".contactForm").css("display", "none");
-              $(".popup").css("display", "block");
-            }, 4000);
-            }
-            else{
-              alert("Please fill all the blanks.")
-            }   
-          });
-        });
-      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
   </body>
